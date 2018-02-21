@@ -916,7 +916,7 @@ begin
     else begin
       N := 0;
       if Length(AValue) >= 24 then begin
-        MonthNamesSeparator := UTF8Copy(AValue, 1, 1);
+        MonthNamesSeparator := Copy(AValue, 1, 1);
         LenMNSep := Length(MonthNamesSeparator);
         if LenMNSep > 0 then begin
           Delete(AValue, 1, LenMNSep);
